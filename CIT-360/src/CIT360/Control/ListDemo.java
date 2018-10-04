@@ -5,6 +5,7 @@
  */
 package CIT360.Control;
 
+import CIT360.Model.*;
 import java.util.*;
 
 /**
@@ -61,29 +62,26 @@ public class ListDemo {
         System.out.println("WHY DID THIS REMOVE ONLY THE EVEN NUMBERS?? 22, 24, 26...");
         System.out.println("");
 
-        // make some team members using the TeamMember constructor
-        TeamMember a = new TeamMember("Jim", 25, 3);
-        TeamMember b = new TeamMember("fred", 27, 5);
-        TeamMember c = new TeamMember("Jhon", 21, 2);
-        TeamMember d = new TeamMember("Jhon", 30, 7);
-
+        makeTeam();
+    }
+        
+    public void makeTeam() {
         //create arraylist of type TeamMember
         ArrayList<TeamMember> team = new ArrayList<>();
 
-        team.add(a);
-        team.add(b);
-        team.add(c);
-        team.add(d);
+        //add some team members
+        team.add(new TeamMember("Jim", 25, 3));
+        team.add(new TeamMember("Fred", 27, 5));
+        team.add(new TeamMember("John", 21, 2));
+        team.add(new TeamMember("John", 30, 7));
 
         // use iterator
         Iterator<TeamMember> ite = team.iterator();
         while (ite.hasNext()) {
             TeamMember mem = ite.next();
-            System.out.println("name " + mem.name);
-            System.out.println("number " + mem.number);
-            System.out.println("rank " + mem.rank);
+            System.out.println("name " + mem.getName());
+            System.out.println("number " + mem.getNumber());
+            System.out.println("rank " + mem.getRank());
         }
-
     }
-
 }
