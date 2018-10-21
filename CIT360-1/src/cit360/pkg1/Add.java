@@ -7,7 +7,7 @@ package cit360.pkg1;
 public abstract class Add implements ChooseMessage {
 
     @Override
-    public void choose(Integer num1, Integer num2) {
+    public void choose(int num1, int num2) {
         Integer tot = num1 + num2;
         DisplayMessage.displayMessage(tot);
     }

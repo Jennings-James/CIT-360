@@ -17,7 +17,7 @@ public class DisplayMessage {
 
     }
 
-    public static void displayMessage(Integer tot) {
+    public static void displayMessage(int tot) {
         ArrayList<String> messages = new ArrayList<>();
 
         messages.add("Think good thoughts");

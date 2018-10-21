@@ -6,5 +6,5 @@ package cit360.pkg1;
  */
 public interface ChooseMessage {
 
-    void choose(Integer num1, Integer num2);
+    void choose(int num1, int num2);
 }

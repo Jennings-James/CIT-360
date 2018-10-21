@@ -12,7 +12,7 @@ public class Handler {
 
     }
 
-    public void handle(String op, Integer num1, Integer num2) {
+    public void handle(String op, int num1, int num2) {
 
         HashMap<String, ChooseMessage> comands = new HashMap<>();
 
