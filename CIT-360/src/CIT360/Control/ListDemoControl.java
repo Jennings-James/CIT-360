@@ -12,14 +12,14 @@ import java.util.*;
  *
  * @author jennings
  */
-public class ListDemo {
+public class ListDemoControl {
 
-    public ListDemo() {
+    public ListDemoControl() {
 
     }
 
     public void list() {
-
+        
         //create an arraylist of type string
         ArrayList<String> ar = new ArrayList<>();
 
@@ -66,19 +66,19 @@ public class ListDemo {
     }
         
     public void makeTeam() {
-        //create arraylist of type TeamMember
-        ArrayList<TeamMember> team = new ArrayList<>();
+        //create arraylist of type TeamMemberModel
+        ArrayList<TeamMemberModel> team = new ArrayList<>();
 
         //add some team members
-        team.add(new TeamMember("Jim", 25, 3));
-        team.add(new TeamMember("Fred", 27, 5));
-        team.add(new TeamMember("John", 21, 2));
-        team.add(new TeamMember("John", 30, 7));
+        team.add(new TeamMemberModel("Jim", 25, 3));
+        team.add(new TeamMemberModel("Fred", 27, 5));
+        team.add(new TeamMemberModel("John", 21, 2));
+        team.add(new TeamMemberModel("John", 30, 7));
 
         // use iterator
-        Iterator<TeamMember> ite = team.iterator();
+        Iterator<TeamMemberModel> ite = team.iterator();
         while (ite.hasNext()) {
-            TeamMember mem = ite.next();
+            TeamMemberModel mem = ite.next();
             System.out.println("name " + mem.getName());
             System.out.println("number " + mem.getNumber());
             System.out.println("rank " + mem.getRank());

@@ -9,9 +9,9 @@ import java.util.*;
  *
  * @author jennings
  */
-public class TeamMember {
+public class TeamMemberModel {
     
-    public TeamMember() {
+    public TeamMemberModel() {
         super();
     }
 
@@ -19,7 +19,7 @@ public class TeamMember {
     private int number;
     private int rank;
 
-    public TeamMember(String name, int number, int rank) {
+    public TeamMemberModel(String name, int number, int rank) {
         this.name = name;
         this.number = number;
         this.rank = rank;

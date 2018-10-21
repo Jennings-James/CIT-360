@@ -13,9 +13,9 @@ import java.util.stream.Collectors;
  *
  * @author jennings
  */
-public class SetDemo {
+public class SetDemoControl {
 
-    public SetDemo() {
+    public SetDemoControl() {
 
     }
 
@@ -38,41 +38,41 @@ public class SetDemo {
     }
 
     public void makeATeam() {
-        //create a hash set of type TeamMember
-        Set<TeamMember> tm = new HashSet<>();
+        //create a hash set of type TeamMemberModel
+        Set<TeamMemberModel> tm = new HashSet<>();
 
-        tm.add(new TeamMember("Tom", 15, 1));
-        tm.add(new TeamMember("Joe", 26, 2));
-        tm.add(new TeamMember("George", 17, 3));
-        tm.add(new TeamMember("Jason", 12, 4));
-        tm.add(new TeamMember("Andy", 20, 5));
+        tm.add(new TeamMemberModel("Tom", 15, 1));
+        tm.add(new TeamMemberModel("Joe", 26, 2));
+        tm.add(new TeamMemberModel("George", 17, 3));
+        tm.add(new TeamMemberModel("Jason", 12, 4));
+        tm.add(new TeamMemberModel("Andy", 20, 5));
 
         System.out.println("print out the team roster.");
 
         //use Iterator
-        Iterator<TeamMember> it = tm.iterator();
+        Iterator<TeamMemberModel> it = tm.iterator();
         while (it.hasNext()) {
-            TeamMember mem = it.next();
+            TeamMemberModel mem = it.next();
             System.out.println("name " + mem.getName());
             System.out.println("number " + mem.getNumber());
             System.out.println("rank " + mem.getRank());
         }
         System.out.println("");
         //create a LinkedHashSet
-        Set<TeamMember> tm2 = new LinkedHashSet<>();
+        Set<TeamMemberModel> tm2 = new LinkedHashSet<>();
 
-        tm2.add(new TeamMember("Tom", 15, 1));
-        tm2.add(new TeamMember("Joe", 26, 2));
-        tm2.add(new TeamMember("George", 17, 3));
-        tm2.add(new TeamMember("Jason", 12, 4));
-        tm2.add(new TeamMember("Andy", 20, 5));
+        tm2.add(new TeamMemberModel("Tom", 15, 1));
+        tm2.add(new TeamMemberModel("Joe", 26, 2));
+        tm2.add(new TeamMemberModel("George", 17, 3));
+        tm2.add(new TeamMemberModel("Jason", 12, 4));
+        tm2.add(new TeamMemberModel("Andy", 20, 5));
 
         System.out.println("print out the team2 roster.");
 
         //use Iterator
-        Iterator<TeamMember> ite = tm2.iterator();
+        Iterator<TeamMemberModel> ite = tm2.iterator();
         while (ite.hasNext()) {
-            TeamMember mem2 = ite.next();
+            TeamMemberModel mem2 = ite.next();
             System.out.println("name " + mem2.getName());
             System.out.println("number " + mem2.getNumber());
             System.out.println("rank " + mem2.getRank());

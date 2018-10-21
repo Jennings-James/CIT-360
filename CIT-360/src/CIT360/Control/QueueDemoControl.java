@@ -11,9 +11,9 @@ import java.util.*;
  *
  * @author jennings
  */
-public class QueueDemo {
+public class QueueDemoControl {
 
-    public QueueDemo() {
+    public QueueDemoControl() {
 
     }
 

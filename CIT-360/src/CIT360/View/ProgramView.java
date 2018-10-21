@@ -13,11 +13,11 @@ import java.util.Scanner;
  *
  * @author jennings
  */
-public class StartProgramView {
+public class ProgramView {
 
     String message;
 
-    public StartProgramView() {
+    public ProgramView() {
 
         message = "Type the letter of the example to run.\n"
                 + "\n"
@@ -144,27 +144,27 @@ public class StartProgramView {
 
     //Define the action handeler here.
     private void listDemo() {
-        ListDemo demo = new ListDemo();
+        ListDemoControl demo = new ListDemoControl();
         demo.list();
     }
 
     private void setDemo() {
-        SetDemo demo = new SetDemo();
+        SetDemoControl demo = new SetDemoControl();
         demo.set();
     }
 
     private void mapDemo() {
-        MapDemo demo = new MapDemo();
+        MapDemoControl demo = new MapDemoControl();
         demo.map();
     }
 
     private void queueDemo() {
-        QueueDemo demo = new QueueDemo();
+        QueueDemoControl demo = new QueueDemoControl();
         demo.queue();
     }
 
     private void treeDemo() {
-        TreeDemo demo = new TreeDemo();
+        TreeDemoControl demo = new TreeDemoControl();
         demo.tree();
     }
 }

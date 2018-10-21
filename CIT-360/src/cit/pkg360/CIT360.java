@@ -5,7 +5,7 @@
  */
 package cit.pkg360;
 
-import CIT360.View.StartProgramView;
+import CIT360.View.ProgramView;
 
 /**
  *
@@ -18,7 +18,7 @@ public class CIT360 {
      */
     public static void main(String[] args) {
 
-        StartProgramView start = new StartProgramView();
+        ProgramView start = new ProgramView();
         start.displayView();
     }
 

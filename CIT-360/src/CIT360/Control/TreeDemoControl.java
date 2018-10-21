@@ -11,9 +11,9 @@ import java.util.*;
  *
  * @author jennings
  */
-public class TreeDemo {
+public class TreeDemoControl {
 
-    public TreeDemo() {
+    public TreeDemoControl() {
 
     }
 

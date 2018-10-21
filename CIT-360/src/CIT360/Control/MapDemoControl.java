@@ -9,9 +9,9 @@ import java.util.*;
  *
  * @author jennings
  */
-public class MapDemo {
+public class MapDemoControl {
     
-    public MapDemo() {
+    public MapDemoControl() {
         
     }
     
