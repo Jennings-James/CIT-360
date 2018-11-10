@@ -12,6 +12,11 @@ public class CIT3601 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        view();
+    }
+        public static void view() {
+            
 
         int num1;
         int num2;
@@ -32,6 +37,26 @@ public class CIT3601 {
         System.out.println(num1 + " " + op + " " + num2 + " = ");
         Handler handleIt = new Handler();
         handleIt.handle(op, num1, num2);
+        
+        reRun();
     }
+        public static void reRun() {
+            
+            String input;
+            
+             Scanner in = new Scanner(System.in);
+
+             System.out.println("");
+            System.out.println("Do you want to try another? ");
+            input = in.nextLine();
+            input.toString();
+            
+            if (!("y".equals(input) | "Y".equals(input))) {
+                System.out.println("Thanks for Playing!!");
+            }
+            else {
+                view();
+            }
+        }
 
 }
