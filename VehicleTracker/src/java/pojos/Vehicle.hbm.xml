@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 27, 2018 8:13:56 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Vehicle" table="vehicle" catalog="vehicletracker" optimistic-lock="version">
+        <id name="vehicleId" type="int">
+            <column name="VehicleID" />
+            <generator class="assigned" />
+        </id>
+        <property name="make" type="string">
+            <column name="Make" length="30" />
+        </property>
+        <property name="model" type="string">
+            <column name="Model" length="30" />
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="Year" />
+        </property>
+        <property name="vin" type="string">
+            <column name="Vin" length="20" />
+        </property>
+        <property name="color" type="string">
+            <column name="Color" length="20" />
+        </property>
+        <property name="newused" type="string">
+            <column name="NewUsed" length="10" />
+        </property>
+        <property name="discription" type="string">
+            <column name="Discription" length="100" />
+        </property>
+        <property name="sold" type="java.lang.Boolean">
+            <column name="Sold" />
+        </property>
+    </class>
+</hibernate-mapping>
